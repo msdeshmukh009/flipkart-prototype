@@ -1,0 +1,22 @@
+.product-listing-layout {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "filters filters main-products main-products main-products main-products";
+  column-gap: 2rem;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.filters {
+  grid-area: filters;
+}
+
+.main-products {
+  grid-area: main-products;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
